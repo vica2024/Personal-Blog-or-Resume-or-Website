@@ -98,28 +98,28 @@ const MyProjects: React.FC = () => {
         <div className={'flex flex-col justify-start gap-2 w-full'}>
             <h2 className={'text-xs font-bold text-white'}>My Projects</h2>
             <div className={'flex flex-col w-full gap-4'}>
-                {/*<div className={'bg-indigo-600 w-full px-4 py-4 flex flex-col gap-3 rounded-xl shadow'}>*/}
-                {/*    <div className={'flex flex-row justify-between items-center gap-3'}>*/}
-                {/*        <Image*/}
-                {/*            src="/icon-2.png"*/}
-                {/*            data-nimg={1}*/}
-                {/*            decoding={'async'}*/}
-                {/*            alt="Code Planner Logo"*/}
-                {/*            width={70}*/}
-                {/*            height={70}*/}
-                {/*        />*/}
-                {/*        <div className={'flex flex-col items-start justify-center w-full'}>*/}
-                {/*            <h3 className={'text-3xl font-medium text-white'}>New Retail Solution</h3>*/}
-                {/*            <p className={'text-xs font-thin text-white'}>*/}
-                {/*                Build better software by planning ahead with the world's best code planning tool!*/}
-                {/*            </p>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*    <a href={''}*/}
-                {/*       className={'w-ful flex items-center justify-center bg-white rounded-xl whitespace-nowrap py-3 hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 font-semibold'}>*/}
-                {/*        Sign Up For Free*/}
-                {/*    </a>*/}
-                {/*</div>*/}
+                <div className={'bg-indigo-600 w-full px-4 py-4 flex flex-col gap-3 rounded-xl shadow'}>
+                    <div className={'flex flex-row justify-between items-center gap-3'}>
+                        <Image
+                            src="/icon-2.png"
+                            data-nimg={1}
+                            decoding={'async'}
+                            alt="Code Planner Logo"
+                            width={70}
+                            height={70}
+                        />
+                        <div className={'flex flex-col items-start justify-center w-full'}>
+                            <h3 className={'text-3xl font-medium text-white'}>New Retail Solution</h3>
+                            <p className={'text-xs font-thin text-white'}>
+                                Build better software by planning ahead with the world's best code planning tool!
+                            </p>
+                        </div>
+                    </div>
+                    <a href={''}
+                       className={'w-ful flex items-center justify-center bg-white rounded-xl whitespace-nowrap py-3 hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 font-semibold'}>
+                        Sign Up For Free
+                    </a>
+                </div>
                 <div className={'bg-red-500 w-full px-4 py-4 flex flex-col gap-3 rounded-xl shadow'}>
                     <div className={'flex flex-row justify-between items-center gap-3'}>
                         <Image
