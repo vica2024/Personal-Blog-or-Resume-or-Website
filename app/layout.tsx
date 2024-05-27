@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Menus} from '@/components/common';
 
 export const metadata: Metadata = {
   title: "Vica Zhuo - Digital practitioner and Content Creator",
   description: "Digital practitioner",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children}: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
       <link rel="icon" href="/favicon.ico" />
-      <body className={inter.className}>{children}</body>
+      <body className={'bg-gray-100'}>
+          <div className={'m-auto'}>
+              <Menus></Menus>
+              <div className={' w-[90%] m-auto'}>
+                  {children}
+              </div>
+          </div>
+      </body>
     </html>
   );
 }

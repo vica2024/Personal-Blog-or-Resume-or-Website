@@ -1,12 +1,15 @@
-import { MyProfile, MySocialMedia,MyProjects, OtherUsefulLinks } from '@/components/personal';
+import {MySocialMedia, MyProjects} from '@/components/personal';
+import {Profiles} from '@/components/common';
 
 export default function Home() {
-    return (<main>
-        <div className={'flex flex-col items-start justify-start min-h-screen px-5 py-10 gap-14 max-w-2xl'}>
-            <MyProfile />
-            <MySocialMedia/>
-            <MyProjects/>
-            <OtherUsefulLinks/>
+    return (
+        <div>
+            <Profiles/>
+            <div className={'bg-gray-100 lg:bg-white float-right lg:w-[70%] p-5 mt-8 pb-28'}>
+                <MySocialMedia/>
+                <MyProjects/>
+            </div>
         </div>
-    </main>);
+    );
 }
+
