@@ -3,7 +3,7 @@ import "./globals.css";
 import { Menus} from '@/components/common';
 
 export const metadata: Metadata = {
-  title: "Vica Zhuo - Digital practitioner and Content Creator",
+  title: "Welcome to Vica's blog",
   description: "Digital practitioner",
 };
 

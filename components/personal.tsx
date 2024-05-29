@@ -1,37 +1,27 @@
 import React from 'react';
 import Image from 'next/image'
 
-const MyProfile: React.FC = () => {
-    return (
-        <div className={'flex flex-row gap-5'}>
-            <Image
-                src="/vicazhuo.png"
-                data-nimg={1}
-                decoding={'async'}
-                className={'rounded-full w-20 sm:w-24 md:w-32 lg:w-44 aspect-square shadow'}
-                alt="vica zhuo"
-                width={50}
-                height={50}
-            />
-            <div className={'flex flex-col items-start justify-center gap-0 md:gap-1'}>
-                <h1 className={'text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight'}>
-                    Hey, I am Weijia Zhuo.
-                </h1>
-                <p className={'max-w-3xl text-xs sm:text-md md:text-lg font-thin'}>
-                    Digital practitioner and Content Creator.
-                </p>
-            </div>
-        </div>
-    );
-};
-
 // My Social Links.
 const MySocialMedia: React.FC = () => {
 
     return (
         <div className={'flex flex-col justify-start gap-2 w-full'}>
-            <h2 className={'text-1xs font-bold h-12 pt-5'}>My Links</h2>
+            <h2 className={'text-2xl font-bold pt-0 pb-6'}>My Links</h2>
             <div className={'flex flex-row w-full justify-start items-center gap-4'}>
+                <a href={'https://github.com/vica2024'} target={'_blank'}
+                   className={'bg-white hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 w-full aspect-square rounded-xl flex items-center justify-center shadow'}>
+                    <svg className="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64"><path d="M512 12.64c-282.752 0-512 229.216-512 512 0 226.208 146.72 418.144 350.144 485.824 25.6 4.736 35.008-11.104 35.008-24.64 0-12.192-0.48-52.544-0.704-95.328-142.464 30.976-172.512-60.416-172.512-60.416-23.296-59.168-56.832-74.912-56.832-74.912-46.464-31.776 3.52-31.136 3.52-31.136 51.392 3.616 78.464 52.768 78.464 52.768 45.664 78.272 119.776 55.648 148.992 42.56 4.576-33.088 17.856-55.68 32.512-68.48-113.728-12.928-233.28-56.864-233.28-253.024 0-55.904 20-101.568 52.768-137.44-5.312-12.896-22.848-64.96 4.96-135.488 0 0 43.008-13.76 140.832 52.48 40.832-11.36 84.64-17.024 128.16-17.248 43.488 0.192 87.328 5.888 128.256 17.248 97.728-66.24 140.64-52.48 140.64-52.48 27.872 70.528 10.336 122.592 5.024 135.488 32.832 35.84 52.704 81.536 52.704 137.44 0 196.64-119.776 239.936-233.792 252.64 18.368 15.904 34.72 47.04 34.72 94.816 0 68.512-0.608 123.648-0.608 140.512 0 13.632 9.216 29.6 35.168 24.576 203.328-67.776 349.856-259.616 349.856-485.76 0-282.784-229.248-512-512-512z" fill="#101827"/>
+                    </svg>
+                </a>
+                <a href={'https://www.linkedin.com/in/vicazhuo'} target={'_blank'}
+                   className={'bg-white hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 w-full aspect-square rounded-xl flex items-center justify-center shadow'}>
+                    <svg viewBox="0 0 1024 1024"
+                         xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                        <path
+                            d="M366.884571 734.134857V391.68H253.001143v342.491429h113.883428zM309.942857 344.868571c39.68 0 64.438857-26.331429 64.438857-59.209142-0.731429-33.572571-24.758857-59.136-63.634285-59.136-39.021714 0-64.438857 25.6-64.438858 59.136 0 32.914286 24.722286 59.245714 62.939429 59.245714h0.731429z m467.456 389.266286v-196.352c0-105.216-56.173714-154.185143-131.035428-154.185143-60.489143 0-87.552 33.28-102.619429 56.576v-48.566857h-113.846857c1.499429 32.182857 0 342.528 0 342.528h113.846857v-191.268571c0-10.24 0.731429-20.48 3.730286-27.721143 8.192-20.48 26.953143-41.654857 58.368-41.654857 41.216 0 57.782857 31.378286 57.782857 77.421714v183.259429h113.810286zM512 0c282.770286 0 512 229.193143 512 512 0 282.770286-229.229714 512-512 512-282.806857 0-512-229.229714-512-512C0 229.193143 229.193143 0 512 0z"
+                            fill="#101827"></path>
+                    </svg>
+                </a>
                 <a href={'https://www.youtube.com/@vicazhuo'} target={'_blank'}
                    className={'bg-white hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 w-full aspect-square rounded-xl flex items-center justify-center shadow'}>
                     <svg className="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="64"
@@ -52,15 +42,6 @@ const MySocialMedia: React.FC = () => {
                     </svg>
 
                 </a>
-                <a href={'https://www.linkedin.com/in/vicazhuo'} target={'_blank'}
-                   className={'bg-white hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 w-full aspect-square rounded-xl flex items-center justify-center shadow'}>
-                    <svg viewBox="0 0 1024 1024"
-                         xmlns="http://www.w3.org/2000/svg" width="64" height="64">
-                        <path
-                            d="M366.884571 734.134857V391.68H253.001143v342.491429h113.883428zM309.942857 344.868571c39.68 0 64.438857-26.331429 64.438857-59.209142-0.731429-33.572571-24.758857-59.136-63.634285-59.136-39.021714 0-64.438857 25.6-64.438858 59.136 0 32.914286 24.722286 59.245714 62.939429 59.245714h0.731429z m467.456 389.266286v-196.352c0-105.216-56.173714-154.185143-131.035428-154.185143-60.489143 0-87.552 33.28-102.619429 56.576v-48.566857h-113.846857c1.499429 32.182857 0 342.528 0 342.528h113.846857v-191.268571c0-10.24 0.731429-20.48 3.730286-27.721143 8.192-20.48 26.953143-41.654857 58.368-41.654857 41.216 0 57.782857 31.378286 57.782857 77.421714v183.259429h113.810286zM512 0c282.770286 0 512 229.193143 512 512 0 282.770286-229.229714 512-512 512-282.806857 0-512-229.229714-512-512C0 229.193143 229.193143 0 512 0z"
-                            fill="#101827"></path>
-                    </svg>
-                </a>
             </div>
         </div>
     );
@@ -69,8 +50,9 @@ const MySocialMedia: React.FC = () => {
 // My Projects.
 const MyProjects: React.FC = () => {
     return (
+
         <div className={'flex flex-col justify-start gap-2 w-full'}>
-            <h2 className={'text-1xs font-bold h-12 pt-5'}>My Services</h2>
+            <h2 className={'text-2xl font-bold pt-8 pb-6'}>My Services</h2>
             <div className={'flex flex-col w-full gap-4'}>
                 <div className={'bg-indigo-600 w-full px-4 py-4 flex flex-col gap-3 rounded-xl shadow'}>
                     <div className={'flex flex-row justify-between items-center gap-3'}>
@@ -83,14 +65,14 @@ const MyProjects: React.FC = () => {
                             height={70}
                         />
                         <div className={'flex flex-col items-start justify-center w-full'}>
-                            <h3 className={'text-3xl font-medium text-white'}>New Retail Solution</h3>
+                            <h3 className={'text-1xl font-medium text-white'}>New Retail Solution</h3>
                             <p className={'text-xs font-thin text-white'}>
                                 Build better software by planning ahead with the best code planning tool on the world!
                             </p>
                         </div>
                     </div>
-                    <a href={''}
-                       className={'w-ful flex items-center justify-center bg-white rounded-xl whitespace-nowrap py-3 hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 font-semibold'}>
+                    <a href={'/'}  target={'_blank'}
+                       className={'w-ful flex  items-center justify-center bg-white rounded-xl whitespace-nowrap py-3 hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 font-semibold'}>
                         Sign Up For Free
                     </a>
                 </div>
@@ -105,13 +87,13 @@ const MyProjects: React.FC = () => {
                             height={70}
                         />
                         <div className={'flex flex-col items-start justify-center w-full'}>
-                            <h3 className={'text-3xl font-medium text-white'}>WECAU</h3>
+                            <h3 className={'text-1xl font-medium text-white'}>WECAU</h3>
                             <p className={'text-xs font-thin text-white'}>
                                 This a dDesign amazing layouts create and print PDFs in minutes.
                             </p>
                         </div>
                     </div>
-                    <a href={'https://wecau.vicazhuo.tech'}
+                    <a href={'https://wecau.vicazhuo.tech'} target={'_blank'}
                        className={'w-ful flex items-center justify-center bg-white rounded-xl whitespace-nowrap py-3 hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 font-semibold'}>
                         Experience For Free
                     </a>
@@ -122,7 +104,6 @@ const MyProjects: React.FC = () => {
 };
 
 export {
-    MyProfile,
     MySocialMedia,
     MyProjects
 };

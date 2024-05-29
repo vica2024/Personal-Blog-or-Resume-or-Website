@@ -1,8 +1,3 @@
-
-
-
-
-
 ## Intro
 
 I am a freelance software engineer who focusing on develops Apps and serves clients in the retail and travel industries. Before this, I was the co-founder & CTO of [ZHIYI](https://aiqicha.baidu.com/company_detail_67644716405156) and a Web Development Manager of [APM Monaco](https://www.apm.mc/). In my spare time, I enjoy taking interesting business ideas and combining them with technology and implementing them and sharing them on [My Github](https://github.com/vica2024). I am particularly interested in projects with high social impact. If you think I can be helpful to you or your cause and would like to meet, please feel free to get in touch.
@@ -29,12 +24,12 @@ Ask me in person for other stories that I'm afraid to share with the internet.
 
 ## I like
 
+- Reading
 - Running
 - Skiing
+- Kongfu tea
 - Sailing and the sea
 - Winter & Summer
-- [Books](https://www.goodreads.com/mdangelo)
-
 
 ## Travel / Geography
 

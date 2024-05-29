@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 import React from 'react';
 import { Profiles } from '@/components/common';
-import  Content  from '@/components/content';
+import  State  from '@/components/states';
 const States: NextPage = () => {
     return (
         <div>
-            <Content />
+            <State />
             <Profiles />
         </div>
     );
