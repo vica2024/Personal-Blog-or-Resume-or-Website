@@ -14,8 +14,8 @@ const States: React.FC = () => {
                 </header>
                 <table className={'w-full'} >
                     <tbody>
-                    {data.map((item) => (
-                        <tr className={'h-14 border-b'}>
+                    {data.map((item,index) => (
+                        <tr className={'h-14 border-b'} key={index}>
                             <td width="60%">{item.label}</td>
                             <td width="40%">{item.value ? <a href={item.link}>{item.value}</a> :''}</td>
                         </tr>
