@@ -62,13 +62,13 @@ const Profiles: React.FC = () => {
                 <section>
                     <Link href={'/'} className="logo">
                         <Image
-                            src="/vicazhuo.png"
+                            src="https://avatars.githubusercontent.com/u/167049259?v=4"
                             data-nimg={1}
                             decoding={'async'}
                             className={'rounded-full m-auto w-20 sm:w-24 md:w-32 lg:w-44 aspect-square shadow'}
                             alt="vica zhuo"
-                            width={50}
-                            height={50}
+                            width={176}
+                            height={176}
                         />
                     </Link>
                     <header className={'border-b border-b-slate-400 border-opacity-30 p-4'}>
