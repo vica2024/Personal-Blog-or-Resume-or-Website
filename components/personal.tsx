@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image'
 
 // My Social Links.
 const MySocialMedia: React.FC = () => {
@@ -56,46 +55,32 @@ const MyProjects: React.FC = () => {
             <div className={'flex flex-col w-full gap-4'}>
                 <div className={'bg-indigo-600 w-full px-4 py-4 flex flex-col gap-3 rounded-xl shadow'}>
                     <div className={'flex flex-row justify-between items-center gap-3'}>
-                        <Image
-                            src="/icon-2.png"
-                            data-nimg={1}
-                            decoding={'async'}
-                            alt="Code Planner Logo"
-                            width={70}
-                            height={70}
-                        />
+                        <div className={'text-3xl font-bold text-white'}>POS</div>
                         <div className={'flex flex-col items-start justify-center w-full'}>
-                            <h3 className={'text-1xl font-medium text-white'}>New Retail Solution</h3>
+                            <h3 className={'text-1xl font-medium text-white'}>Diamond POS</h3>
                             <p className={'text-xs font-thin text-white'}>
-                                Build better software by planning ahead with the best code planning tool on the world!
+                                This is a POS system integrated with WEB3 technology. In addition to mainstream cash register functions, it incorporates cryptocurrency as a points system and employs a consensus mechanism to enhance cooperation and trust among merchants.
                             </p>
                         </div>
                     </div>
-                    <a href={'/'}  target={'_blank'}
+                    <a href={'/diamond-pos'}  target={'_blank'}
                        className={'w-ful flex  items-center justify-center bg-white rounded-xl whitespace-nowrap py-3 hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 font-semibold'}>
-                        Sign Up For Free
+                        To learning more
                     </a>
                 </div>
                 <div className={'bg-red-500 w-full px-4 py-4 flex flex-col gap-3 rounded-xl shadow'}>
                     <div className={'flex flex-row justify-between items-center gap-3'}>
-                        <Image
-                            src="/icon-1.png"
-                            data-nimg={1}
-                            decoding={'async'}
-                            alt="Code Planner Logo"
-                            width={70}
-                            height={70}
-                        />
+                        <div className={'text-3xl font-bold text-white'}>DK</div>
                         <div className={'flex flex-col items-start justify-center w-full'}>
-                            <h3 className={'text-1xl font-medium text-white'}>WECAU</h3>
+                            <h3 className={'text-1xl font-medium text-white'}>稻客云租</h3>
                             <p className={'text-xs font-thin text-white'}>
-                                This a dDesign amazing layouts create and print PDFs in minutes.
+                                稻客民宿是一款多端（租客，房东，管家，总后台，门店）功能全面强大房屋管理系统，适用于物业托管，民宿长租，短租，钟点房时等文旅产业的企业。
                             </p>
                         </div>
                     </div>
-                    <a href={'https://wecau.vicazhuo.tech'} target={'_blank'}
+                    <a href={'/dk-cloud'} target={'_blank'}
                        className={'w-ful flex items-center justify-center bg-white rounded-xl whitespace-nowrap py-3 hover:cursor-pointer hover:bg-gray-200 active:bg-gray-100 font-semibold'}>
-                        Experience For Free
+                        To learning more
                     </a>
                 </div>
             </div>

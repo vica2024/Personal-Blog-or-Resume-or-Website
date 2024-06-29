@@ -1,19 +1,38 @@
 'use client';
 import React, {useState} from 'react';
+import {usePathname} from 'next/navigation';
 import Link from 'next/link';
 import Routers from '@/data/routes';
 import Image from 'next/image'
+import {any} from "prop-types";
 
 
 const Menus: React.FC = () => {
-    const [current, setCurrent] = useState<number | 0>(0);
+
+    const pathname: string = usePathname() || ""; // Ensure pathname is a string
+    const isShowMenu: boolean = !['/dk-cloud', '/diamond-pos'].includes(pathname);
+    let cIndex: number = 0;
+    Routers.map((router, index) => {
+         if(router.path === pathname){
+             cIndex = index;
+         }
+    });
+
+    const [current, setCurrent] = useState<number | 0>(cIndex);
     const [isShow, setIsShow] = useState<boolean>(false);
     const currentIndex: number = 0;
     const handleToggle = () => {
         setIsShow(!isShow);
     };
+    const clickMenu = (index:number) => {
+        setCurrent(index)
+        setIsShow(false);
+    };
+    const moveMenu = (index:number) => {
 
-    return (
+    };
+
+    return isShowMenu ? (
         <header className={'bg-slate-900'}>
             <div className={'sm:block lg:hidden'}>
                 <div className={'flex items-center justify-between px-4'}>
@@ -39,10 +58,10 @@ const Menus: React.FC = () => {
                             key={index}
                             className={'w-full text-gray-300 h-12 whitespace-nowrap relative cursor-pointer hover:text-white'}
                             onMouseOver={() => setCurrent(index)}
-                            onMouseOut={() => setCurrent(currentIndex)}>
+                            onMouseOut={() => moveMenu(index)}>
                             <Link
                                 className={'absolute left-2 items-center inset-0 text-sm text-f-vis z-20 grid lg:place-content-center'}
-                                href={route.path} onClick={() => setIsShow(false)}>
+                                href={route.path} onClick={() => clickMenu(index)}>
                                 {route.label}
                             </Link>
                         </li>
@@ -52,7 +71,7 @@ const Menus: React.FC = () => {
                 </ul>
             </div>
         </header>
-    );
+    ) : null;
 };
 
 const Profiles: React.FC = () => {
