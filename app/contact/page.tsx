@@ -5,7 +5,6 @@ import  Content  from '@/components/content';
 const Contact: NextPage = () => {
     return (
         <div>
-            <Content />
             <Profiles />
         </div>
     );
