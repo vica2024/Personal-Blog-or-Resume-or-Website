@@ -18,7 +18,7 @@ I am a freelance software engineer who focusing on develops Apps and serves clie
 
 - At 20, I neglected my studies because I spent most of my time on business, and I was unfortunately expelled from school. I have never regretted this decision.
 
-- In the spring of 2012, I founded my first software company and developed Android app that name called [睿学尖子](https://www.wandoujia.com/apps/1297867), the first learning app for middle school students in China. The app provided interactive online learning services to over 60,000 students.
+- In the spring of 2013, I founded my first software company and developed Android app that name called [睿学尖子](https://www.wandoujia.com/apps/1297867), the first learning app for middle school students in China. The app provided interactive online learning services to over 60,000 students.
 
 Ask me in person for other stories that I'm afraid to share with the internet.
 
