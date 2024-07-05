@@ -11,18 +11,18 @@ const routes = [
     label: 'Resume',
     path: '/resume',
   },
-  {
-    label: 'Projects',
-    path: '/projects',
-  },
+  // {
+  //   label: 'Projects',
+  //   path: '/projects',
+  // },
   {
     label: 'States',
     path: '/states',
   },
-  {
-    label: 'Contact',
-    path: '/contact',
-  },
+  // {
+  //   label: 'Contact',
+  //   path: '/contact',
+  // },
 ];
 
 export default routes;

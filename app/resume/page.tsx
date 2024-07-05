@@ -6,7 +6,7 @@ const Resume: NextPage = () => {
 
     return (
         <div>
-            <Content />
+            <Content path={"./resume.md"} title={"Vica's Resume"} />
             <Profiles />
         </div>
     );

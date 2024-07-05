@@ -37,7 +37,7 @@ const Menus: React.FC = () => {
             <div className={'sm:block lg:hidden'}>
                 <div className={'flex items-center justify-between px-4'}>
                     <h1 className={'text-2xl text-white'}>
-                        <a href={'/'}>Vica ZHUO</a>
+                        <a href={'/'}>VICA ZHUO</a>
                     </h1>
                     <div>
                         <button onClick={handleToggle}>

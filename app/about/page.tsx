@@ -6,7 +6,7 @@ const About: NextPage = () => {
 
     return (
         <div>
-            <Content />
+            <Content path={"./about.md"} title={'ABOUT ME'} />
             <Profiles />
         </div>
     );

@@ -23,3 +23,21 @@ h1, h2, h3, h4, h5, h6, .text-f-vis{
     box-sizing: border-box;
 }
 
+.markdown-container a{
+    color: #2a62db!important;
+    text-decoration:none!important;
+}
+
+@keyframes scan {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.scan-line {
+    animation: scan 5s linear infinite;
+}
+
